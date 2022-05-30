@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const ContactForm = (props) => {
     const initialFieldValues = {
         fullName: '',
-        mobile: '',
+        mobil: '',
         email: '',
         address: ''
     }
@@ -41,7 +41,7 @@ const ContactForm = (props) => {
                         <i className="fas fa-user"></i>
                     </div>
                 </div>
-                <input className="form-control" placeholder="Full Name" name="fullName"
+                <input className="form-control" placeholder="İsim" name="fullName"
                     value={values.fullName}
                     onChange={handleInputChange}
                 />
@@ -53,7 +53,7 @@ const ContactForm = (props) => {
                             <i className="fas fa-mobile-alt"></i>
                         </div>
                     </div>
-                    <input className="form-control" placeholder="Mobile" name="mobile"
+                    <input className="form-control" placeholder="Telefon" name="mobile"
                         value={values.mobile}
                         onChange={handleInputChange}
                     />
@@ -71,13 +71,13 @@ const ContactForm = (props) => {
                 </div>
             </div>
             <div className="form-group">
-                <textarea className="form-control" placeholder="Address" name="address"
+                <textarea className="form-control" placeholder="Mesajınız" name="address"
                     value={values.address}
                     onChange={handleInputChange}
                 />
             </div>
             <div className="form-group">
-                <input type="submit" value={props.currentId == '' ? "Save" : "Update"} className="btn btn-primary btn-block" />
+                <input type="submit" value={props.currentId == '' ? "Kaydet" : "Güncelle"} className="btn btn-block" style={{backgroundColor: 'lightblue', color: '#9d9d9d'}}/>
             </div>
         </form >
     );

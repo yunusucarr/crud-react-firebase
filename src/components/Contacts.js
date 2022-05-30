@@ -59,7 +59,7 @@ const Contacts = () => {
     <>
       <div className="jumbotron jumbotron-fluid">
         <div className="container">
-          <h1 className="display-4 text-center">Contact Register</h1>
+          <h1 className="display-4 text-center">İletişim Kaydı</h1>
         </div>
       </div>
       <div className="row">
@@ -70,10 +70,10 @@ const Contacts = () => {
           <table className="table table-borderless table-stripped">
             <thead className="thead-light">
               <tr>
-                <th>Full Name</th>
-                <th>Mobile</th>
+                <th>İsim</th>
+                <th>Telefon</th>
                 <th>Email</th>
-                <th>Actions</th>
+                <th>Ayarlar</th>
               </tr>
             </thead>
             <tbody>
